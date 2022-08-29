@@ -91,12 +91,17 @@ public class ReservationsPage extends HomePage {
         return waitForVisibilityOfElement(checkoutSelectedReturnLocation).isDisplayed();
     }
 
-    public String getCategorySelectedFromReservationForm() {
-        return checkoutSelectedCategoryCar.getText();
-    }
-    public String getCategoryOsSelectedCar(){
-      return   categoryOfSelectedCar.getText();
+    public String setCategorySelectedFromReservationForm() {
+        checkoutSelectedCategoryCar.getText();
+        return categoryOfCar;
     }
 
+    public String getCategoryOsSelectedCar() {
+        return categoryOfSelectedCar.getText();
+    }
+
+    public String getCategoryOfCar() {
+        return categoryOfCar;
+    }
 
 }

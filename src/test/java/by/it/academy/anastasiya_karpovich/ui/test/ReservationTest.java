@@ -1,36 +1,26 @@
 package by.it.academy.anastasiya_karpovich.ui.test;
 
-import by.it.academi.anastasiya_karpovich.page.HomePage;
-import by.it.academi.anastasiya_karpovich.page.ReservationsPage;
+import by.it.academi.anastasiya_karpovich.step.ReservationStep;
 import by.it.academi.anastasiya_karpovich.utils.Date;
-import by.it.academy.anastasiya_karpovich.ui.test.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.NoSuchElementException;
 
 public class ReservationTest extends BaseTest {
     @Test
     public void testReservationAuto() throws InterruptedException {
-        Date date = new Date();
-        new HomePage()
-                .openPage()
-                .clickLinkReservation()
-                .clickLinkMakeReservation()
-                .typePickUpLocation()
-                .clickSelectPickUpLocation()
-                .typeDateFrom(date)
-                .typeReturnLocation()
-                .clickReturnLocation()
-                .typeToDate(date)
-                .clickButtonSelectCar();
-        ReservationsPage reservationsPage = new ReservationsPage();
+        try {
+            Date date = new Date();
+            ReservationStep reservationStep = new ReservationStep()
+                    .goToReservationPage()
 
-         String categoryOfCar = reservationsPage.getCategoryOsSelectedCar();
-              reservationsPage.clickLinkPayLater()
-                .clickButtonProceedToCheckout();
-              Thread.sleep(2000);
+                    .fillReservationForm(date);
 
-        Assert.assertTrue("pick up location is not Boston", reservationsPage.isCheckoutSelectedPictUpLocationDisplayed());
-        Assert.assertTrue("Return location is not Chicago", reservationsPage.isCheckoutSelectedReturnLocationDisplayed());
-        Assert.assertEquals(categoryOfCar,reservationsPage.getCategorySelectedFromReservationForm());
+            Assert.assertTrue("pick up location is not Boston", reservationStep.isCheckoutSelectedPictUpLocationDisplayed());
+            Assert.assertTrue("Return location is not Chicago", reservationStep.isCheckoutSelectedReturnLocationDisplayed());
+            Assert.assertEquals(reservationStep.getCategoryOfCar(), reservationStep.setCategorySelectedFromReservationForm());
+        } catch (NoSuchElementException e) {
+            logger.info("Nothing car in this period");
+        }
     }
 }
