@@ -1,6 +1,6 @@
-package by.it.academi.anastasiya_karpovich.utils;
+package by.it.academi.anastasiya_karpovich.ui.utils;
 
-import by.it.academi.anastasiya_karpovich.entity.User;
+import by.it.academi.anastasiya_karpovich.ui.entity.User;
 import org.openqa.selenium.By;
 
 public class GetXpath {

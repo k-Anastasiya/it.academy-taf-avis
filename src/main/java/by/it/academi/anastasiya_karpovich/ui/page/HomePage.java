@@ -1,4 +1,4 @@
-package by.it.academi.anastasiya_karpovich.page;
+package by.it.academi.anastasiya_karpovich.ui.page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

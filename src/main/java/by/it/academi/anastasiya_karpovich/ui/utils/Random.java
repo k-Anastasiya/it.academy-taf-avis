@@ -1,4 +1,4 @@
-package by.it.academi.anastasiya_karpovich.utils;
+package by.it.academi.anastasiya_karpovich.ui.utils;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;

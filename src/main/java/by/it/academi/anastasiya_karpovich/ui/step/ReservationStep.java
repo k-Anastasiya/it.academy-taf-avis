@@ -1,7 +1,7 @@
-package by.it.academi.anastasiya_karpovich.step;
+package by.it.academi.anastasiya_karpovich.ui.step;
 
-import by.it.academi.anastasiya_karpovich.page.ReservationsPage;
-import by.it.academi.anastasiya_karpovich.utils.Date;
+import by.it.academi.anastasiya_karpovich.ui.page.ReservationsPage;
+import by.it.academi.anastasiya_karpovich.ui.utils.Date;
 
 public class ReservationStep extends ReservationsPage {
     public ReservationStep goToReservationPage() {

@@ -1,6 +1,6 @@
-package by.it.academi.anastasiya_karpovich.entity;
+package by.it.academi.anastasiya_karpovich.ui.entity;
 
-import by.it.academi.anastasiya_karpovich.utils.Random;
+import by.it.academi.anastasiya_karpovich.ui.utils.Random;
 
 import static com.google.common.base.Ascii.toUpperCase;
 

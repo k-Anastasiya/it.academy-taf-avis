@@ -1,7 +1,7 @@
-package by.it.academi.anastasiya_karpovich.step;
+package by.it.academi.anastasiya_karpovich.ui.step;
 
-import by.it.academi.anastasiya_karpovich.page.HomePage;
-import by.it.academi.anastasiya_karpovich.page.SingUpPage;
+import by.it.academi.anastasiya_karpovich.ui.page.HomePage;
+import by.it.academi.anastasiya_karpovich.ui.page.SingUpPage;
 
 public class SingUpStep extends SingUpPage {
 public SingUpStep goToLogInPage(){

@@ -1,4 +1,4 @@
-package by.it.academi.anastasiya_karpovich.entity;
+package by.it.academi.anastasiya_karpovich.ui.entity;
 
 public class ErrorMessage {
   public static String errorMessageWhenEmptyCells = "There are multiple errors on the form. Please correct them and resubmit the form.";

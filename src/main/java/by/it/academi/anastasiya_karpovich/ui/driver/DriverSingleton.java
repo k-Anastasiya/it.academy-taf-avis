@@ -1,4 +1,4 @@
-package by.it.academi.anastasiya_karpovich.driver;
+package by.it.academi.anastasiya_karpovich.ui.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

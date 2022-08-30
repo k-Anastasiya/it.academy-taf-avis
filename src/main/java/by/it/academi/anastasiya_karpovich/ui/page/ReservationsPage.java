@@ -1,6 +1,6 @@
-package by.it.academi.anastasiya_karpovich.page;
+package by.it.academi.anastasiya_karpovich.ui.page;
 
-import by.it.academi.anastasiya_karpovich.utils.Date;
+import by.it.academi.anastasiya_karpovich.ui.utils.Date;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

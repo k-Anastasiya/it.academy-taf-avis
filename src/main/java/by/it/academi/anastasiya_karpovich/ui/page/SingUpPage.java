@@ -1,7 +1,7 @@
-package by.it.academi.anastasiya_karpovich.page;
+package by.it.academi.anastasiya_karpovich.ui.page;
 
-import by.it.academi.anastasiya_karpovich.entity.User;
-import by.it.academi.anastasiya_karpovich.utils.GetXpath;
+import by.it.academi.anastasiya_karpovich.ui.entity.User;
+import by.it.academi.anastasiya_karpovich.ui.utils.GetXpath;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
