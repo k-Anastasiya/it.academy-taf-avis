@@ -1,6 +1,6 @@
-package by.it.academi.anastasiya_karpovich.page;
+package by.it.academi.anastasiya_karpovich.ui.page;
 
-import by.it.academi.anastasiya_karpovich.driver.DriverSingleton;
+import by.it.academi.anastasiya_karpovich.ui.driver.DriverSingleton;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;

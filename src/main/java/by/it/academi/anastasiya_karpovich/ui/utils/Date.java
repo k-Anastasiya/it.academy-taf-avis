@@ -1,4 +1,4 @@
-package by.it.academi.anastasiya_karpovich.utils;
+package by.it.academi.anastasiya_karpovich.ui.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
