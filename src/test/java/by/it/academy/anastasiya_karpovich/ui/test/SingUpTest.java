@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class SingUpTest extends BaseTest {
 
     @Test
-    public void testSinginFormWithCorrectCredentials() throws InterruptedException {
+    public void testSingInFormWithCorrectCredentials() throws InterruptedException {
         try {
             User user = new User();
             new SingUpStep()
@@ -21,16 +21,16 @@ public class SingUpTest extends BaseTest {
                     .clickButtonSaveForm();
             SingUpPage loginPage = new SingUpPage();
 
-            Assert.assertTrue(loginPage.isNewUserDisplayed(), "New user not created");
+            Assert.assertTrue(loginPage.isNewUserDisplayed(), "New user  created");
         } catch (NoSuchElementException e) {
             logger.info("New user not created");
         }
     }
 
     @Test
-    public void testSinginWithEmptyCredentials() {
-      new SingUpStep()
-              .goToLogInPage()
+    public void testSingInWithEmptyCredentials() {
+        new SingUpStep()
+                .goToLogInPage()
 
                 .clickButtonSaveForm();
         SingUpPage singUpPage = new SingUpPage();
@@ -46,7 +46,7 @@ public class SingUpTest extends BaseTest {
     }
 
     @Test
-    public void  testSinginWithIncorrectCredentials() {
+    public void testSingInWithIncorrectCredentials() {
         User user = new User();
         new SingUpStep()
                 .goToLogInPage()

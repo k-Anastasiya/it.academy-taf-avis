@@ -103,5 +103,4 @@ public class ReservationsPage extends HomePage {
     public String getCategoryOfCar() {
         return categoryOfCar;
     }
-
 }

@@ -2,6 +2,7 @@ package by.it.academi.anastasiya_karpovich.ui.page;
 
 import by.it.academi.anastasiya_karpovich.ui.entity.User;
 import by.it.academi.anastasiya_karpovich.ui.utils.GetXpath;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -88,7 +89,7 @@ public class SingUpPage extends HomePage {
     }
 
     public SingUpPage typePasswordWithValidData() {
-        inputPassword.sendKeys(User.getPassword());
+        waitForVisibilityOfElement(inputPassword).sendKeys(User.getPassword());
         logger.info("password is: " + User.getPassword());
         return this;
     }
@@ -123,8 +124,7 @@ public class SingUpPage extends HomePage {
     }
 
     public boolean isNewUserDisplayed() {
-        waitForVisibilityOfElement(driver.findElement(GetXpath.getXpath())).isDisplayed();
-        return true;
+     return waitForVisibilityOfElement(driver.findElement(GetXpath.getXpath())).isDisplayed();
     }
 
     public boolean isErrorMessageWhenEmptyCellsDisplayed() {
@@ -145,7 +145,6 @@ public class SingUpPage extends HomePage {
 
     public String getErrorMessageWhenEmailEmptyOrUncorrected() {
         return errorMessageEmail.getText();
-
     }
     public String getErrorMessageWhenPasswordEmptyOrUncorrected() {
         return errorMessagePassword.getText();

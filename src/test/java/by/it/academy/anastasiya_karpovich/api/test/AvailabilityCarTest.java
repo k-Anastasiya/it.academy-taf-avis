@@ -1,16 +1,17 @@
 package by.it.academy.anastasiya_karpovich.api.test;
 
+import by.it.academi.anastasiya_karpovich.api.object.Token;
 import by.it.academy.anastasiya_karpovich.api.specifications.Specifications;
+import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class AvailabilityCarTest extends BaseTest{
-
+public class AvailabilityCarTest {
     @Test
     public void testGetListOfAvailabilityCar()  {
-        Specifications.installSpecification(Specifications.requestSpecification(), Specifications.responseSpecificationOk(400));
+        Specifications.installSpecification(Specifications.requestSpecification(), Specifications.responseSpecificationOk(200));
 
         given()
                 .queryParam("brand", "Avis")
